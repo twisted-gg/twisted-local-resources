@@ -1,5 +1,9 @@
 version: '2'
 services:
+  mmr:
+    build: ../twisted-mmr-api
+    ports:
+      - 8080:3000
   mongo:
     image: mongo
     restart: always
